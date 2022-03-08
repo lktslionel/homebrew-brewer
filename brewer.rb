@@ -2,24 +2,19 @@
 #                https://rubydoc.brew.sh/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class Brewer < Formula
-  desc ""
+  desc "testing brew installer"
   homepage "https://github.com/lktslionel/brewer"
-  url "https://github.com/lktslionel/brewer/archive/refs/tags/v0.1.0.tar.gz"
-  version "0.1.0"
-  sha256 "85a45ffac9191ddc76c5d0ca8c72a65f4e994379c79b26be2a9ea8abb0d0db2a"
+  url "https://github.com/lktslionel/brewer/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "8f3355a3b53bc5115b2c013dd7c0952a482c1ea1d4ef378c4ee3f8e16751bcb3"
   license "MIT"
 
   # depends_on "cmake" => :build
 
   def install
-    # ENV.deparallelize  # if your formula fails when building in parallel
-    # Remove unrecognized options if warned by configure
-    # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
     bin.install     'brewer'
     bin.install     Dir["source"]
     prefix.install  'README.md'
     prefix.install  '.VERSION'
-    # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
   end
 
   test do
@@ -32,5 +27,6 @@ class Brewer < Formula
     #
     # The installed folder is not in the path, so use the entire path to any
     # executables being tested: `system "#{bin}/program", "do", "something"`.
+    system "false"
   end
 end
