@@ -4,7 +4,7 @@
 class Brewer < Formula
   desc ""
   homepage "https://github.com/lktslionel/brewer"
-  url "https://github.com/lktslionel/brewer/archive/refs/tags/0.1.0.tar.gz"
+  url "https://github.com/lktslionel/brewer/archive/refs/tags/v0.1.0.tar.gz"
   version "0.1.0"
   sha256 "85a45ffac9191ddc76c5d0ca8c72a65f4e994379c79b26be2a9ea8abb0d0db2a"
   license "MIT"
